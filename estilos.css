@@ -1,0 +1,17 @@
+:root {
+    --primary: #1a56db;
+    --accent: #f8312f;
+    --sidebar-bg: #f3f4f6;
+    --text-main: #374151;
+}
+
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; color: var(--text-main); margin: 0; padding: 0; }
+.page-container { width: 210mm; height: 297mm; border: 1px solid #ddd; margin: 20px auto; display: flex; overflow: hidden; background: white; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+.sidebar { width: 30%; background-color: var(--sidebar-bg); padding: 20px; border-right: 2px solid #e5e7eb; display: flex; flex-direction: column; }
+.main-content { width: 70%; padding: 40px; position: relative; }
+.fase-tag { background: var(--primary); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.8rem; text-transform: uppercase; }
+.steam-box { background: #e0f2fe; border: 2px dashed #0369a1; padding: 15px; border-radius: 10px; margin-top: 20px; }
+.eco-pill { background: #fef2f2; border-left: 5px solid #ef4444; padding: 10px; margin: 20px 0; font-style: italic; }
+.control-point { border: 2px solid #10b981; border-radius: 10px; padding: 15px; background: #ecfdf5; }
+h1, h2 { color: var(--primary); }
+.svg-icon { width: 40px; height: 40px; fill: var(--primary); }
