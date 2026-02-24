@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión Saber - Página 1</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN GLOBAL (Secciones del Libro) -->
+    <nav class="book-nav">
+        <h2>Misión Saber 1º</h2>
+        <ul class="menu-areas" id="mainMenu">
+            <li><a href="#" onclick="changeArea('Lenguaje')">Lenguaje</a></li>
+            <li><a href="#" onclick="changeArea('Naturales')">C. Naturales</a></li>
+            <li><a href="#" onclick="changeArea('Matematicas')">Matemáticas</a></li>
+            <li><a href="#" onclick="changeArea('Sociales')">Sociales</a></li>
+            <li><a href="#" onclick="changeArea('Ingles')">Inglés</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENEDOR DE PÁGINA FÍSICA -->
+    <div class="page-container" id="bookPage">
+        
+        <!-- SIDEBAR IZQUIERDO: Metas y Desafío -->
+        <aside class="sidebar">
+            <div style="text-align: center; margin-bottom: 20px;">
+                <h1 style="color: var(--primary-blue); font-size: 1.5rem;">¡MISIÓN 1!</h1>
+                <p><strong>[Nombre de la Misión]</strong></p>
+                <div style="font-size: 3rem; margin: 10px 0;">🚀</div>
+            </div>
+
+            <section class="mission-goals">
+                <h3 style="font-size: 0.9rem; color: var(--accent-red);">¿CUÁL ES NUESTRA MISIÓN?</h3>
+                <p style="font-size: 0.85rem; margin-top: 5px;">
+                    "En esta misión, vamos a explorar y comprender cómo <em>[EBC en lenguaje sencillo]</em>. Al final, serás capaz de demostrar tu aprendizaje..."
+                </p>
+            </section>
+
+            <div class="qr-placeholder">
+                <small>Acceso Docente:<br>Matriz y Progresión</small>
+            </div>
+
+            <section class="challenge-box" style="background: white; padding: 10px; border-radius: 5px; margin-top: 15px;">
+                <h3 style="font-size: 0.8rem;">¿CUÁL ES NUESTRO DESAFÍO?</h3>
+                <p style="font-size: 0.85rem; color: var(--primary-blue);">
+                    <strong>Tu Gran Reto:</strong> ¿Cómo podríamos [Pregunta detonante] para [Propósito]?
+                </p>
+            </section>
+
+            <div class="eco-pill" style="margin-top: 20px;">
+                <strong>Conexión ECO:</strong>
+                <p style="font-size: 0.8rem;">"La colaboración será clave. ¿Recuerdas cuando trabajar en equipo te ayudó?"</p>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL: Activación y Roadmap -->
+        <main class="main-content">
+            <div class="fase-header">FASE 1 - Centro de Comando</div>
+            
+            <section class="activacion">
+                <h2>Despegamos... ¿Qué sabemos?</h2>
+                <p>Realiza estas actividades rápidas para activar tus superpoderes de aprendizaje:</p>
+                <div style="border: 1px solid #eee; padding: 15px; margin-top: 10px; border-radius: 8px;">
+                    <p>[Actividad lúdica o pregunta abierta para lluvia de ideas...]</p>
+                    <div style="height: 60px; border-bottom: 1px dashed #ccc;"></div>
+                </div>
+            </section>
+
+            <section class="roadmap" style="margin-top: 30px;">
+                <h2 style="color: var(--primary-blue);">¡Navega por tu Misión!</h2>
+                <p>Estas son las estaciones que recorrerás:</p>
+                
+                <div class="roadmap-step">
+                    <div class="icon-circle">1</div>
+                    <div><strong>Simulador de Vuelo:</strong> Entrena tus competencias (Pág. 5).</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="icon-circle">2</div>
+                    <div><strong>Exploración:</strong> Desarrollo activo y retos.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="icon-circle">3</div>
+                    <div><strong>Informando Avances:</strong> Reporte de misión cumplida.</div>
+                </div>
+                <div class="roadmap-step">
+                    <div class="icon-circle">4</div>
+                    <div><strong>Bitácora:</strong> Tu diario de aprendizaje.</div>
+                </div>
+            </section>
+
+            <section class="digital-connect" style="background: #eef2ff; padding: 15px; border-radius: 10px; margin-top: 20px;">
+                <strong>Conexión Digital:</strong>
+                <p style="font-size: 0.85rem;">Ingresa a <em>Space-GEC</em> para ver el video motivacional de la Misión 1.</p>
+            </section>
+
+            <div class="glosario-box">
+                <strong>Glosario Esencial:</strong>
+                <p>• <strong>Evidencia:</strong> Prueba de lo que has aprendido.</p>
+                <p>• <strong>Competencia:</strong> Tu capacidad para resolver retos.</p>
+            </div>
+
+            <footer class="page-footer">Página 1</footer>
+        </main>
+    </div>
+
+    <script>
+        function changeArea(areaName) {
+            console.log("Cambiando al área: " + areaName);
+            // Aquí se podría cargar contenido dinámico en el futuro
+            alert("Has seleccionado el área de " + areaName + ". NotebookLM materializará el contenido específico para esta sección.");
+        }
+    </script>
+</body>
+</html>
