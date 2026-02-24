@@ -2,92 +2,83 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misión Saber - Página 3</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-        .progress-container { margin-top: 20px; }
-        .progress-bar { height: 10px; background: #ddd; border-radius: 5px; overflow: hidden; margin-bottom: 5px; }
-        .progress-fill { height: 100%; background: var(--success-green); width: 45%; }
-        .infografia-placeholder {
-            background: #f1f5f9;
-            border: 2px dashed #cbd5e1;
-            padding: 30px;
-            text-align: center;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-        .componente-tag {
-            background: #dcfce7;
-            color: #166534;
-            padding: 5px 10px;
-            font-size: 0.75rem;
-            border-radius: 4px;
-            font-weight: bold;
-        }
+        :root { --primary: #11468F; --accent: #DA1212; --success: #10b981; --bg-page: #f3f4f6; --white: #ffffff; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-page); margin: 0; display: flex; flex-direction: column; align-items: center; }
+        .nav-bar { width: 100%; background: var(--primary); color: white; padding: 12px 0; text-align: center; position: sticky; top: 0; z-index: 100; }
+        .nav-bar a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 13px; }
+        .book-page { width: 210mm; height: 297mm; background: var(--white); margin: 20px; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.2); position: relative; overflow: hidden; }
+        .sidebar { width: 280px; background-color: #f8fafc; border-right: 3px solid var(--primary); padding: 30px 20px; display: flex; flex-direction: column; }
+        .main-content { flex: 1; padding: 40px; position: relative; }
+        .fase-badge { background: var(--success); color: white; padding: 8px 20px; font-weight: bold; display: inline-block; margin-bottom: 20px; border-radius: 0 15px 15px 0; margin-left: -40px; }
+        .vocab-box { background: white; padding: 15px; border-radius: 10px; border: 1px solid #e2e8f0; margin-top: 20px; }
+        .page-navigation { position: absolute; bottom: 30px; right: 40px; left: 320px; display: flex; justify-content: space-between; align-items: center; }
+        .btn-nav { background: var(--primary); color: white; text-decoration: none; padding: 8px 20px; border-radius: 5px; font-weight: bold; font-size: 14px; }
+        h1 { color: var(--primary); font-size: 32px; margin-bottom: 10px; }
+        h2 { color: var(--primary); font-size: 22px; margin-top: 20px; }
+        p { line-height: 1.6; color: #334155; }
     </style>
 </head>
 <body>
 
-    <nav class="book-nav">
-        <h2>Misión Saber 1º</h2>
-        <ul class="menu-areas">
-            <li><a href="index.html">Pág 1</a></li>
-            <li><a href="pagina2.html">Pág 2</a></li>
-            <li><a href="#" class="active">Pág 3</a></li>
-        </ul>
+    <nav class="nav-bar">
+        <a href="index.html">LENGUAJE</a>
+        <a href="#">C. NATURALES</a>
+        <a href="#">MATEMÁTICAS</a>
+        <a href="#">SOCIALES</a>
+        <a href="#">INGLÉS</a>
     </nav>
 
-    <div class="page-container">
-        <!-- SIDEBAR: Progreso y Vocabulario -->
+    <div class="book-page">
         <aside class="sidebar">
-            <div class="progress-container">
-                <small>PROGRESO DE LA MISIÓN</small>
-                <div class="progress-bar"><div class="progress-fill"></div></div>
-                <small>Estás en la Fase de Exploración</small>
+            <div style="text-align: center;">
+                <div style="font-size: 40px;">📚</div>
+                <h3 style="color: var(--primary);">EXPLORACIÓN LECTORA</h3>
             </div>
 
-            <div style="margin-top: 40px;">
-                <h3 style="color: var(--primary-blue); font-size: 0.9rem;">DICCIONARIO DE EXPLORADOR</h3>
-                <ul style="font-size: 0.8rem; padding-left: 15px; margin-top: 10px;">
-                    <li><strong>Concepto A:</strong> Definición clave para el área.</li>
-                    <li><strong>Concepto B:</strong> Término necesario para el reto.</li>
-                </ul>
+            <div class="vocab-box">
+                <h4 style="margin: 0; color: var(--accent); font-size: 12px;">VOCABULARIO</h4>
+                <p style="font-size: 13px; margin: 10px 0;"><strong>Narrador:</strong> Es la voz que cuenta la historia.</p>
+                <p style="font-size: 13px; margin: 10px 0;"><strong>Personaje:</strong> Ser que realiza las acciones en el cuento.</p>
             </div>
 
-            <div class="eco-pill" style="margin-top: auto;">
-                <p style="font-size: 0.75rem;"><strong>💡 Tip de Estudio:</strong> Usa colores diferentes para subrayar las ideas principales.</p>
+            <div style="margin-top: auto; padding: 15px; background: #fff7ed; border-radius: 10px; border: 1px solid #ffedd5;">
+                <p style="font-size: 12px; margin: 0;"><strong>💡 Tip de Lectura:</strong> Cuando leas un diálogo, imagina que los personajes están frente a ti.</p>
             </div>
         </aside>
 
-        <!-- CONTENIDO PRINCIPAL: Desarrollo de Contenidos 1 -->
         <main class="main-content">
-            <div class="fase-header">FASE 3 - Explorando Territorios</div>
+            <div class="fase-badge">EXPLORACIÓN</div>
+            <h1>El Mundo de los Cuentos</h1>
+            <p><strong>Aprendiendo en Acción:</strong> Los textos narrativos nos permiten viajar a mundos fantásticos. En esta sección descubriremos cómo se organizan estas historias.</p>
             
-            <header>
-                <h1 style="color: var(--primary-blue);">Aprendiendo en Acción</h1>
-                <p>Descubre cómo los conocimientos de esta unidad te ayudan a resolver problemas reales.</p>
-            </header>
-
-            <section style="margin-top: 25px;">
-                <span class="componente-tag">INTEGRACIÓN: [Nombre del Componente]</span>
-                <h2 style="margin-top: 10px;">1. El corazón del tema</h2>
-                <p style="font-size: 0.95rem;">[Aquí se desarrolla el primer bloque de contenido técnico con lenguaje adaptado a la edad. Se explican los principios básicos del área].</p>
+            <section>
+                <h2>1. ¿Qué es la Narración?</h2>
+                <p>Narrar es contar hechos reales o imaginarios. Todo cuento tiene un <strong>Inicio</strong> (donde conocemos a los personajes), un <strong>Nudo</strong> (donde ocurre el problema) y un <strong>Desenlace</strong> (donde todo se resuelve).</p>
                 
-                <div class="infografia-placeholder">
-                    <p><strong>[INFOGRAFÍA CENTRAL]</strong></p>
-                    <small>Diagrama visual que explica el concepto de forma gráfica (Mapas, flujos o procesos).</small>
+                <div style="background: #f1f5f9; padding: 30px; border-radius: 15px; text-align: center; margin: 20px 0; border: 1px solid #cbd5e1;">
+                    <h3 style="margin-bottom: 15px; color: var(--primary);">ESTRUCTURA DEL CUENTO</h3>
+                    <div style="display: flex; justify-content: space-around; font-size: 12px;">
+                        <div><strong>INICIO</strong><br>Había una vez...</div>
+                        <div><strong>NUDO</strong><br>De repente...</div>
+                        <div><strong>DESENLACE</strong><br>Al final...</div>
+                    </div>
                 </div>
             </section>
 
-            <section class="manos-a-la-obra" style="background: #fff; border: 2px solid var(--accent-red); padding: 15px; border-radius: 10px;">
-                <h3 style="color: var(--accent-red);">¡Manos a la Obra!</h3>
-                <p style="font-size: 0.85rem;"><strong>Paso 1 del Gran Reto:</strong> Es hora de investigar. Observa tu entorno y describe dos situaciones donde veas aplicado lo que aprendimos hoy.</p>
-                <div style="border-bottom: 1px solid #ccc; height: 30px; margin-top: 10px;"></div>
-                <div style="border-bottom: 1px solid #ccc; height: 30px;"></div>
+            <section style="background: #fffafb; border: 2px solid var(--accent); padding: 20px; border-radius: 15px; margin-top: 20px;">
+                <h3 style="color: var(--accent); margin-top: 0;">¡Manos a la Obra!</h3>
+                <p style="font-size: 14px;">Piensa en tu cuento favorito. Escribe en las siguientes líneas quién es el personaje principal y cuál era su mayor problema.</p>
+                <div style="border-bottom: 1px solid #ccc; height: 35px;"></div>
+                <div style="border-bottom: 1px solid #ccc; height: 35px;"></div>
             </section>
 
-            <footer class="page-footer">Página 3</footer>
+            <div class="page-navigation">
+                <a href="pagina2.html" class="btn-nav">Anterior</a>
+                <span style="font-weight: bold; color: var(--primary);">Página 3</span>
+                <a href="pagina4.html" class="btn-nav">Siguiente</a>
+            </div>
         </main>
     </div>
 </body>
