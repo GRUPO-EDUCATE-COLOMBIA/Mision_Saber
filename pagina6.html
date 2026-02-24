@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Misión Saber - Página 6</title>
+    <style>
+        :root { --primary: #11468F; --accent: #DA1212; --eco: #fb923c; --bg-page: #f3f4f6; --white: #ffffff; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-page); margin: 0; display: flex; flex-direction: column; align-items: center; }
+        .nav-bar { width: 100%; background: var(--primary); color: white; padding: 12px 0; text-align: center; }
+        .book-page { width: 210mm; height: 297mm; background: var(--white); margin: 20px; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.2); position: relative; overflow: hidden; }
+        
+        .sidebar { width: 280px; background-color: #fff7ed; border-right: 3px solid var(--eco); padding: 30px 20px; }
+        .main-content { flex: 1; padding: 40px; }
+        
+        .eco-box { background: white; border: 2px solid var(--eco); border-radius: 15px; padding: 20px; margin-bottom: 30px; position: relative; }
+        .eco-label { position: absolute; top: -12px; left: 20px; background: var(--eco); color: white; padding: 2px 10px; border-radius: 10px; font-size: 11px; font-weight: bold; }
+        
+        .narrator-type { background: #f1f5f9; padding: 15px; border-radius: 10px; margin: 10px 0; border: 1px solid #e2e8f0; }
+        .home-project { background: #eff6ff; border: 2px solid #3b82f6; border-radius: 15px; padding: 20px; margin-top: 40px; }
+
+        h2 { color: var(--primary); margin-top: 0; }
+        p { line-height: 1.6; color: #334155; font-size: 15px; }
+        .page-footer { position: absolute; bottom: 20px; left: 40px; font-weight: bold; color: #94a3b8; }
+    </style>
+</head>
+<body>
+    <nav class="nav-bar">
+        <span style="color:white; font-weight:bold;">ÁREA 1: LENGUAJE | UNIDAD 1</span>
+    </nav>
+
+    <div class="book-page">
+        <aside class="sidebar">
+            <div style="text-align: center;">
+                <div style="font-size: 40px;">🤝</div>
+                <h3 style="color: var(--eco); font-size: 16px;">PROYECTO ECO</h3>
+            </div>
+            <p style="font-size: 13px; margin-top: 20px;"><strong>Habilidades para la Vida:</strong> En un cuento, cada personaje tiene una voz. En la vida real, aprender a escuchar las voces de nuestros compañeros nos ayuda a resolver conflictos.</p>
+            <div style="background: white; padding: 12px; border-radius: 10px; border: 1px dashed var(--eco); margin-top: 20px;">
+                <p style="font-size: 12px; margin: 0;"><strong>Reflexión:</strong> ¿Alguna vez ayudaste a alguien a terminar una tarea? Eso es colaborar, ¡el mejor final para cualquier historia!</p>
+            </div>
+        </aside>
+
+        <main class="main-content">
+            <h2>¿Quién cuenta la historia?</h2>
+            <p>El narrador es la voz que nos guía. No debemos confundirlo con el autor (quien escribe el libro). El narrador puede estar en diferentes lugares:</p>
+            
+            <div class="narrator-type">
+                <strong>👤 Narrador Protagonista:</strong> Cuenta su propia historia. Usa el "Yo". 
+                <br><small>Ejemplo: "Yo caminaba por el bosque cuando vi un destello..."</small>
+            </div>
+
+            <div class="narrator-type">
+                <strong>👁️ Narrador Observador:</strong> Cuenta lo que les pasa a otros. Usa el "Él" o "Ella".
+                <br><small>Ejemplo: "Ella caminaba por el bosque cuando vio un destello..."</small>
+            </div>
+
+            <div class="eco-box">
+                <div class="eco-label">ACCESO A INFO CLASIFICADA</div>
+                <h3 style="margin-top: 10px; color: var(--eco); font-size: 18px;">Píldora de Empatía</h3>
+                <p style="font-style: italic; font-size: 14px;">"Si el lobo contara el cuento de Caperucita Roja... ¿crees que la historia sería igual? A veces, entender que hay otros puntos de vista nos hace más sabios."</p>
+                <p><strong>Reto:</strong> Escribe una frase corta de cómo se siente tu mejor amigo hoy:</p>
+                <div style="border-bottom: 1px solid #ddd; height: 30px;"></div>
+            </div>
+
+            <section class="home-project">
+                <h3 style="color: #1d4ed8; margin-top: 0;">🏠 Laboratorio en Casa</h3>
+                <p style="font-size: 14px;"><strong>Proyecto en Familia:</strong> Esta semana, pregúntale a una persona mayor en casa cuál era su cuento o leyenda favorita cuando era niño. Escucha con atención y prepárate para contar esa historia en clase.</p>
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <div style="flex:1; border: 1px solid #bfdbfe; background: white; height: 40px; border-radius: 5px; display: flex; align-items:center; padding-left:10px; font-size:12px; color:#60a5fa;">Nombre del familiar:</div>
+                    <div style="flex:1; border: 1px solid #bfdbfe; background: white; height: 40px; border-radius: 5px; display: flex; align-items:center; padding-left:10px; font-size:12px; color:#60a5fa;">Título de la historia:</div>
+                </div>
+            </section>
+        </main>
+        <div class="page-footer">Página 6</div>
+    </div>
+</body>
+</html>
