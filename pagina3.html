@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión Saber - Página 3</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .progress-container { margin-top: 20px; }
+        .progress-bar { height: 10px; background: #ddd; border-radius: 5px; overflow: hidden; margin-bottom: 5px; }
+        .progress-fill { height: 100%; background: var(--success-green); width: 45%; }
+        .infografia-placeholder {
+            background: #f1f5f9;
+            border: 2px dashed #cbd5e1;
+            padding: 30px;
+            text-align: center;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        .componente-tag {
+            background: #dcfce7;
+            color: #166534;
+            padding: 5px 10px;
+            font-size: 0.75rem;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="book-nav">
+        <h2>Misión Saber 1º</h2>
+        <ul class="menu-areas">
+            <li><a href="index.html">Pág 1</a></li>
+            <li><a href="pagina2.html">Pág 2</a></li>
+            <li><a href="#" class="active">Pág 3</a></li>
+        </ul>
+    </nav>
+
+    <div class="page-container">
+        <!-- SIDEBAR: Progreso y Vocabulario -->
+        <aside class="sidebar">
+            <div class="progress-container">
+                <small>PROGRESO DE LA MISIÓN</small>
+                <div class="progress-bar"><div class="progress-fill"></div></div>
+                <small>Estás en la Fase de Exploración</small>
+            </div>
+
+            <div style="margin-top: 40px;">
+                <h3 style="color: var(--primary-blue); font-size: 0.9rem;">DICCIONARIO DE EXPLORADOR</h3>
+                <ul style="font-size: 0.8rem; padding-left: 15px; margin-top: 10px;">
+                    <li><strong>Concepto A:</strong> Definición clave para el área.</li>
+                    <li><strong>Concepto B:</strong> Término necesario para el reto.</li>
+                </ul>
+            </div>
+
+            <div class="eco-pill" style="margin-top: auto;">
+                <p style="font-size: 0.75rem;"><strong>💡 Tip de Estudio:</strong> Usa colores diferentes para subrayar las ideas principales.</p>
+            </div>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL: Desarrollo de Contenidos 1 -->
+        <main class="main-content">
+            <div class="fase-header">FASE 3 - Explorando Territorios</div>
+            
+            <header>
+                <h1 style="color: var(--primary-blue);">Aprendiendo en Acción</h1>
+                <p>Descubre cómo los conocimientos de esta unidad te ayudan a resolver problemas reales.</p>
+            </header>
+
+            <section style="margin-top: 25px;">
+                <span class="componente-tag">INTEGRACIÓN: [Nombre del Componente]</span>
+                <h2 style="margin-top: 10px;">1. El corazón del tema</h2>
+                <p style="font-size: 0.95rem;">[Aquí se desarrolla el primer bloque de contenido técnico con lenguaje adaptado a la edad. Se explican los principios básicos del área].</p>
+                
+                <div class="infografia-placeholder">
+                    <p><strong>[INFOGRAFÍA CENTRAL]</strong></p>
+                    <small>Diagrama visual que explica el concepto de forma gráfica (Mapas, flujos o procesos).</small>
+                </div>
+            </section>
+
+            <section class="manos-a-la-obra" style="background: #fff; border: 2px solid var(--accent-red); padding: 15px; border-radius: 10px;">
+                <h3 style="color: var(--accent-red);">¡Manos a la Obra!</h3>
+                <p style="font-size: 0.85rem;"><strong>Paso 1 del Gran Reto:</strong> Es hora de investigar. Observa tu entorno y describe dos situaciones donde veas aplicado lo que aprendimos hoy.</p>
+                <div style="border-bottom: 1px solid #ccc; height: 30px; margin-top: 10px;"></div>
+                <div style="border-bottom: 1px solid #ccc; height: 30px;"></div>
+            </section>
+
+            <footer class="page-footer">Página 3</footer>
+        </main>
+    </div>
+</body>
+</html>
