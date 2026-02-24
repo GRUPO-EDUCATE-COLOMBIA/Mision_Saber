@@ -2,118 +2,45 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Misión Saber - Página 4</title>
-    <link rel="stylesheet" href="styles.css">
     <style>
-        .steam-box {
-            background: linear-gradient(135deg, #e0f2fe 0%, #f0f9ff 100%);
-            border: 2px solid #0ea5e9;
-            padding: 20px;
-            border-radius: 12px;
-            margin: 20px 0;
-            position: relative;
-        }
-        .steam-icon {
-            position: absolute;
-            top: -15px;
-            right: 20px;
-            background: #0ea5e9;
-            color: white;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.7rem;
-            font-weight: bold;
-        }
-        .punto-control {
-            background: #ecfdf5;
-            border: 2px solid #10b981;
-            padding: 20px;
-            border-radius: 12px;
-        }
-        .pregunta-saber {
-            background: white;
-            padding: 10px;
-            border-radius: 5px;
-            margin-top: 10px;
-            font-size: 0.85rem;
-        }
+        :root { --primary: #11468F; --accent: #DA1212; --success: #10b981; --steam: #0ea5e9; --bg-page: #f3f4f6; --white: #ffffff; }
+        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-page); margin: 0; display: flex; flex-direction: column; align-items: center; }
+        .nav-bar { width: 100%; background: var(--primary); color: white; padding: 12px 0; text-align: center; position: sticky; top: 0; z-index: 100; }
+        .nav-bar a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 13px; }
+        .book-page { width: 210mm; height: 297mm; background: var(--white); margin: 20px; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.2); position: relative; overflow: hidden; }
+        .sidebar { width: 280px; background-color: #fef2f2; border-right: 3px solid var(--accent); padding: 30px 20px; display: flex; flex-direction: column; }
+        .main-content { flex: 1; padding: 40px; position: relative; }
+        .steam-box { background: #f0f9ff; border: 2px solid var(--steam); border-radius: 15px; padding: 20px; margin: 20px 0; }
+        .control-point { background: #ecfdf5; border: 2px solid var(--success); padding: 20px; border-radius: 15px; margin-top: 20px; }
+        .question { background: white; padding: 12px; border-radius: 8px; margin-top: 10px; border: 1px solid #d1fae5; font-size: 14px; }
+        .page-navigation { position: absolute; bottom: 30px; right: 40px; left: 320px; display: flex; justify-content: space-between; align-items: center; }
+        .btn-nav { background: var(--primary); color: white; text-decoration: none; padding: 8px 20px; border-radius: 5px; font-weight: bold; font-size: 14px; }
     </style>
 </head>
 <body>
 
-    <nav class="book-nav">
-        <h2>Misión Saber 1º</h2>
-        <ul class="menu-areas">
-            <li><a href="pagina3.html">Anterior (Pág 3)</a></li>
-            <li><a href="#" class="active">Pág 4</a></li>
-        </ul>
+    <nav class="nav-bar">
+        <a href="index.html">LENGUAJE</a>
+        <a href="#">C. NATURALES</a>
+        <a href="#">MATEMÁTICAS</a>
+        <a href="#">SOCIALES</a>
+        <a href="#">INGLÉS</a>
     </nav>
 
-    <div class="page-container">
-        <!-- SIDEBAR: Píldora ECO y Conexión Digital -->
+    <div class="book-page">
         <aside class="sidebar">
-            <div style="text-align: center; margin-bottom: 30px;">
-                <div style="font-size: 3rem;">🤝</div>
-                <h3 style="color: var(--accent-red); font-size: 0.9rem;">ACCESO A INFORMACIÓN CLASIFICADA</h3>
+            <div style="text-align: center;">
+                <div style="font-size: 40px;">🤫</div>
+                <h3 style="color: var(--accent);">INFO CLASIFICADA</h3>
             </div>
-
-            <div class="eco-pill">
-                <strong>Proyecto ECO:</strong>
-                <p style="font-size: 0.8rem; margin-top: 5px;">"Cuando compartes tus ideas con respeto, tu equipo llega más lejos. ¿Cómo te sientes hoy trabajando en grupo?"</p>
-            </div>
-
-            <div style="margin-top: auto; background: var(--primary-blue); color: white; padding: 15px; border-radius: 8px;">
-                <small><strong>Ampliación Digital:</strong></small>
-                <p style="font-size: 0.7rem; margin-top: 5px;">Escanea el código de la Pág. 1 y busca el simulador interactivo "Misión Pro".</p>
+            <p style="font-size: 13px; margin-top: 20px;"><strong>Proyecto ECO:</strong> Trabajar en equipo es como escribir un cuento: cada uno aporta una idea para un final feliz.</p>
+            <div style="margin-top: auto; padding: 15px; background: var(--primary); color: white; border-radius: 10px;">
+                <p style="font-size: 11px; margin: 0;"><strong>SPACE-GEC:</strong> Escanea el QR para escuchar el audiocuento "La brújula perdida".</p>
             </div>
         </aside>
 
-        <!-- CONTENIDO PRINCIPAL: Profundización y Punto de Control -->
         <main class="main-content">
-            <header>
-                <h2 style="color: var(--primary-blue);">2. Aplicación y Conexiones</h2>
-                <p style="font-size: 0.9rem;">Mira este ejemplo resuelto para que veas cómo se aplica lo aprendido:</p>
-            </header>
-
-            <div style="background: #f8fafc; padding: 15px; border-left: 4px solid var(--primary-blue); margin: 15px 0;">
-                <p style="font-size: 0.85rem;"><strong>Ejemplo:</strong> [Caso práctico del área resuelto paso a paso con una pequeña ilustración].</p>
-            </div>
-
-            <!-- SECCIÓN STEAM -->
-            <section class="steam-box">
-                <div class="steam-icon">CONEXIÓN STEAM</div>
-                <h3 style="color: #0369a1; font-size: 1rem;">Ingenio y Ciencia</h3>
-                <p style="font-size: 0.85rem;">¿Sabías que los ingenieros utilizan [Concepto B] para crear soluciones tecnológicas? Intenta imaginar un invento que use esto para ayudar a tu comunidad.</p>
-                <div style="height: 40px; border-bottom: 1px dashed #0ea5e9;"></div>
-            </section>
-
-            <!-- PUNTOS DE CONTROL -->
-            <section class="punto-control">
-                <h3 style="color: #059669; font-size: 1rem;">✅ ¡Punto de Control!</h3>
-                <p style="font-size: 0.8rem;">Verifica lo que has aprendido hasta ahora (Preguntas 1 y 2 de 10):</p>
-                
-                <div class="pregunta-saber">
-                    <strong>1. Según el texto anterior, si cambiamos el elemento X, ¿qué sucedería con Y?</strong>
-                    <div style="margin-top: 5px;">
-                        <input type="radio"> <small>A) Aumenta la velocidad.</small><br>
-                        <input type="radio"> <small>B) Se mantiene igual.</small><br>
-                        <input type="radio"> <small>C) El sistema se detiene.</small>
-                    </div>
-                </div>
-
-                <div class="pregunta-saber">
-                    <strong>2. ¿Cuál de estas imágenes representa mejor el concepto de [Área]?</strong>
-                    <div style="display: flex; gap: 10px; margin-top: 5px;">
-                        <div style="width: 50px; height: 40px; background: #ddd;"></div>
-                        <div style="width: 50px; height: 40px; background: #ddd;"></div>
-                        <div style="width: 50px; height: 40px; background: #ddd;"></div>
-                    </div>
-                </div>
-            </section>
-
-            <footer class="page-footer">Página 4</footer>
-        </main>
-    </div>
-</body>
-</html>
+            <h2>Ejemplo de un Cuento Corto</h2>
+            <div style="background: #f8fafc; padding: 20px; border-left: 5px solid var(--primary); font-size: 14px; font-style: italic;">
+                "El conejo Simón quería llegar a la luna. Construyó un cohete con cajas de cartón (Inicio). Al despegar, se dio cuenta de que olvidó el
