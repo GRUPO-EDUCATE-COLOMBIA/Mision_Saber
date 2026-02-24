@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misión Saber - Página 2</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .simulador-container {
+            background-color: #f8fafc;
+            border: 2px solid var(--primary-blue);
+            border-radius: 12px;
+            padding: 20px;
+            margin-top: 15px;
+        }
+        .step-box {
+            background: white;
+            border-left: 4px solid var(--accent-red);
+            padding: 10px;
+            margin-bottom: 10px;
+            font-size: 0.85rem;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.05);
+        }
+        .problema-contexto {
+            background-color: #fff7ed;
+            border: 1px solid #ffedd5;
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .badge-vuelo {
+            background: var(--primary-blue);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            display: inline-block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- MENÚ DE NAVEGACIÓN GLOBAL -->
+    <nav class="book-nav">
+        <h2>Misión Saber 1º</h2>
+        <ul class="menu-areas">
+            <li><a href="index.html">Página 1</a></li>
+            <li><a href="#" class="active">Página 2</a></li>
+            <li><a href="#">Áreas...</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENEDOR DE PÁGINA FÍSICA -->
+    <div class="page-container">
+        
+        <!-- SIDEBAR IZQUIERDO: Brújula y QR -->
+        <aside class="sidebar">
+            <div style="text-align: center;">
+                <div style="font-size: 4rem;">🧭</div>
+                <h2 style="color: var(--primary-blue); font-size: 1.1rem;">Tu Brújula de Vuelo</h2>
+            </div>
+
+            <div class="eco-pill" style="margin-top: 30px; border-color: var(--primary-blue);">
+                <small><strong>Recordatorio:</strong></small>
+                <p style="font-size: 0.8rem;">Los 4 pasos del simulador son tu mejor herramienta para vencer cualquier desafío tipo Saber.</p>
+            </div>
+
+            <div class="qr-placeholder" style="margin-top: auto; border: 2px solid var(--primary-blue);">
+                <small>QR: Guía docente<br>Aplicación del Simulador</small>
+            </div>
+            <p style="font-size: 0.7rem; text-align: center; margin-top: 5px;">Escanea para ver estrategias en el aula.</p>
+        </aside>
+
+        <!-- CONTENIDO PRINCIPAL: Metodología y Aplicación -->
+        <main class="main-content">
+            <div class="fase-header">FASE 2 - Pilota tu Conocimiento</div>
+            
+            <section class="introduccion">
+                <h2>Simulador de Vuelo: Misión 1</h2>
+                <p>Antes de avanzar, recordemos los pasos clave para resolver preguntas por competencias. ¡Aplícalos hoy!</p>
+            </section>
+
+            <!-- CONTENEDOR DEL SIMULADOR -->
+            <section class="simulador-container">
+                <div class="badge-vuelo">METODOLOGÍA SABER LAB 2027</div>
+                
+                <div class="step-box">
+                    <strong>Paso 1: Lectura del Paisaje (Contexto).</strong>
+                    <p>Identifica dónde ocurre la situación y quiénes participan.</p>
+                </div>
+                <div class="step-box">
+                    <strong>Paso 2: Identificación del Radar (Pregunta).</strong>
+                    <p>¿Qué es exactamente lo que me están pidiendo resolver?</p>
+                </div>
+                <div class="step-box">
+                    <strong>Paso 3: Plan de Vuelo (Estrategia).</strong>
+                    <p>Relaciona lo que sabes con la información del texto o imagen.</p>
+                </div>
+                <div class="step-box">
+                    <strong>Paso 4: Aterrizaje (Respuesta).</strong>
+                    <p>Selecciona la opción que responda con precisión al desafío.</p>
+                </div>
+            </section>
+
+            <!-- SITUACIÓN CONTEXTUALIZADA -->
+            <section class="problema-contexto">
+                <h3>Analicemos esta situación:</h3>
+                <p style="font-style: italic; font-size: 0.9rem; margin: 10px 0;">
+                    "[Aquí se presenta una situación corta del área, por ejemplo: Un niño que observa cómo cambia la sombra de un árbol a diferentes horas del día...]"
+                </p>
+                <p><strong>Reflexiona:</strong> Frente a este problema de [Área], ¿cómo interpretarías la misión? ¿Qué pistas buscarías en el dibujo?</p>
+                <div style="height: 40px; border-bottom: 1px solid #ccc;"></div>
+            </section>
+
+            <div style="margin-top: 20px; border: 1px solid var(--primary-blue); padding: 10px; border-radius: 5px;">
+                <p style="font-size: 0.85rem;"><strong>💡 Tip de Vuelo:</strong> No busques la respuesta rápida, busca entender el <em>porqué</em>.</p>
+            </div>
+
+            <footer class="page-footer">Página 2</footer>
+        </main>
+    </div>
+
+</body>
+</html>
