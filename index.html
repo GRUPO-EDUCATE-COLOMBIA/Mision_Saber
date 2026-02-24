@@ -4,39 +4,43 @@
     <meta charset="UTF-8">
     <title>Misión Saber - Página 1</title>
     <style>
-        :root { --primary: #11468F; --accent: #DA1212; --bg-page: #e5e7eb; --sidebar-color: #f3f4f6; --white: #ffffff; }
-        body { font-family: 'Segoe UI', sans-serif; background-color: var(--bg-page); margin: 0; display: flex; flex-direction: column; align-items: center; }
+        :root { --primary: #11468F; --accent: #DA1212; --success: #10b981; --bg-page: #f3f4f6; --white: #ffffff; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: var(--bg-page); margin: 0; display: flex; flex-direction: column; align-items: center; }
+        .nav-bar { width: 100%; background: var(--primary); color: white; padding: 12px 0; text-align: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
+        .nav-bar a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 14px; transition: 0.3s; }
+        .nav-bar a:hover { border-bottom: 2px solid white; }
         
-        /* Barra de Navegación Superior */
-        .nav-bar { width: 100%; background: var(--primary); color: white; padding: 12px 0; text-align: center; position: sticky; top: 0; z-index: 100; }
-        .nav-bar a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; font-size: 13px; opacity: 0.8; }
-        .nav-bar a:hover { opacity: 1; border-bottom: 2px solid white; }
-
-        .book-page { width: 210mm; height: 297mm; background: var(--white); margin: 20px; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.2); position: relative; }
+        .book-page { width: 210mm; height: 297mm; background: var(--white); margin: 20px; display: flex; box-shadow: 0 0 20px rgba(0,0,0,0.2); position: relative; overflow: hidden; border-radius: 5px; }
         
-        .sidebar { width: 280px; background-color: var(--sidebar-color); border-right: 3px solid var(--primary); padding: 30px 20px; display: flex; flex-direction: column; }
-        .main-content { flex: 1; padding: 40px; position: relative; }
+        /* Sidebar Izquierdo */
+        .sidebar { width: 300px; background-color: #f0f4f8; border-right: 4px solid var(--primary); padding: 40px 25px; display: flex; flex-direction: column; gap: 20px; }
+        .mision-badge { background: var(--primary); color: white; padding: 10px; border-radius: 8px; text-align: center; font-weight: bold; }
+        .icon-mision { font-size: 60px; text-align: center; margin: 20px 0; }
+        .goals-box { background: white; padding: 15px; border-radius: 10px; border-left: 5px solid var(--success); }
+        .goals-box h4 { margin: 0 0 10px 0; color: var(--primary); font-size: 16px; }
+        .goals-box p { font-size: 13px; margin: 5px 0; line-height: 1.4; }
 
-        /* Estilos de Contenido */
-        .mission-header { background: var(--primary); color: white; padding: 20px; border-radius: 0 0 20px 0; margin: -30px -20px 20px -20px; text-align: center; }
-        .fase-badge { background: var(--accent); color: white; padding: 8px 20px; font-weight: bold; display: inline-block; margin-bottom: 20px; }
-        .goal-box { background: white; border: 1px solid #ddd; padding: 15px; border-radius: 10px; margin-bottom: 20px; }
+        /* Contenido Principal */
+        .main-content { flex: 1; padding: 50px; display: flex; flex-direction: column; }
+        .fase-indicator { align-self: flex-start; background: var(--accent); color: white; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 12px; margin-bottom: 10px; }
+        h1 { color: var(--primary); font-size: 36px; margin: 0 0 20px 0; line-height: 1.1; }
+        .intro-text { font-size: 18px; color: #475569; line-height: 1.6; margin-bottom: 30px; }
+        
+        .activation-box { background: #fff7ed; border: 2px dashed #fb923c; padding: 25px; border-radius: 15px; margin-bottom: 30px; }
+        .activation-box h3 { margin-top: 0; color: #9a3412; }
 
-        /* NAVEGACIÓN DE PÁGINA (BOTONES) */
-        .page-navigation { position: absolute; bottom: 30px; right: 40px; left: 320px; display: flex; justify-content: space-between; align-items: center; }
-        .btn-nav { background: var(--primary); color: white; text-decoration: none; padding: 8px 20px; border-radius: 5px; font-weight: bold; font-size: 14px; }
-        .btn-nav.disabled { background: #ccc; cursor: not-allowed; }
-        .page-number { font-weight: bold; color: var(--primary); }
+        .glossary-small { margin-top: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 15px; background: #f8fafc; padding: 15px; border-radius: 10px; }
+        .glossary-item b { color: var(--primary); display: block; font-size: 12px; }
+        .glossary-item span { font-size: 12px; }
 
-        h1 { color: var(--primary); margin: 0 0 10px 0; }
-        p { color: #444; line-height: 1.5; font-size: 15px; }
+        .page-footer { position: absolute; bottom: 20px; right: 40px; font-weight: bold; color: #94a3b8; }
     </style>
 </head>
 <body>
 
     <nav class="nav-bar">
-        <a href="index.html" style="border-bottom: 2px solid white;">LENGUAJE</a>
-        <a href="#">C. NATURALES</a>
+        <a href="#">LENGUAJE</a>
+        <a href="#">CIENCIAS</a>
         <a href="#">MATEMÁTICAS</a>
         <a href="#">SOCIALES</a>
         <a href="#">INGLÉS</a>
@@ -44,37 +48,63 @@
 
     <div class="book-page">
         <aside class="sidebar">
-            <div class="mission-header">
-                <h1>MISIÓN 1</h1>
-                <div style="font-size: 40px;">🚀</div>
+            <div class="mision-badge">MISIÓN 1</div>
+            <div class="icon-mision">🚀</div>
+            <h2 style="color: var(--primary); text-align: center; margin: 0;">Viajeros de la Imaginación</h2>
+            
+            <div class="goals-box">
+                <h4>¿Cuál es nuestra Misión?</h4>
+                <p>En esta aventura vamos a explorar cómo se construyen las historias. Al final, serás capaz de identificar los personajes, el lugar y la magia que esconde cada cuento.</p>
             </div>
-            <div class="goal-box">
-                <h3 style="color: var(--accent); font-size: 12px;">¿NUESTRA MISIÓN?</h3>
-                <p style="font-size: 13px;">Explorar los secretos de la comunicación efectiva.</p>
-            </div>
-            <div class="goal-box">
-                <h3 style="color: var(--primary); font-size: 12px;">EL GRAN RETO</h3>
-                <p style="font-size: 13px;">¿Cómo crear un mensaje que cambie el mundo?</p>
+
+            <div style="background: #e0f2fe; padding: 15px; border-radius: 10px; font-size: 12px;">
+                <h4 style="margin: 0; color: #0369a1;">Tu Gran Reto:</h4>
+                <p>¿Cómo podríamos crear un personaje inolvidable para un cuento que inspire a otros niños?</p>
             </div>
         </aside>
 
         <main class="main-content">
-            <div class="fase-badge">FASE 1: CENTRO DE COMANDO</div>
-            <h1>¡Inicia la Aventura!</h1>
-            <p>Este es tu punto de partida. Aquí organizaremos nuestras ideas antes de despegar hacia el conocimiento.</p>
+            <div class="fase-indicator">FASE 1: CENTRO DE COMANDO</div>
+            <h1>¡Despegamos hacia el mundo narrativo!</h1>
+            <p class="intro-text">Antes de iniciar nuestro viaje, revisemos nuestro mapa de conocimientos. ¿Alguna vez te has preguntado por qué nos gustan tanto las historias?</p>
             
-            <div style="margin-top: 40px; border: 2px dashed #ccc; padding: 40px; text-align: center; border-radius: 10px;">
-                [Espacio para ilustración de bienvenida]
+            <div class="activation-box">
+                <h3>¿Qué sabemos de nuestra misión?</h3>
+                <p>Responde mentalmente o comenta con un compañero:</p>
+                <ul style="line-height: 1.8;">
+                    <li>¿Cuál es el último cuento que leíste o escuchaste?</li>
+                    <li>Si pudieras ser un personaje de ficción, ¿quién serías y por qué?</li>
+                    <li>¿Qué elementos crees que no pueden faltar en una buena historia?</li>
+                </ul>
             </div>
 
-            <!-- NAVEGACIÓN INFERIOR -->
-            <div class="page-navigation">
-                <a href="#" class="btn-nav disabled">Anterior</a>
-                <span class="page-number">Página 1</span>
-                <a href="pagina2.html" class="btn-nav">Siguiente</a>
+            <section>
+                <h3>¡Navega por tu Misión!</h3>
+                <div style="display: flex; gap: 10px; margin-top: 10px;">
+                    <div style="flex:1; border: 1px solid #ddd; padding: 10px; border-radius: 8px; font-size: 11px; text-align: center;">
+                        <b>1. Simulador</b><br>Entrena tu mente
+                    </div>
+                    <div style="flex:1; border: 1px solid #ddd; padding: 10px; border-radius: 8px; font-size: 11px; text-align: center;">
+                        <b>2. Exploración</b><br>Aprende y crea
+                    </div>
+                    <div style="flex:1; border: 1px solid #ddd; padding: 10px; border-radius: 8px; font-size: 11px; text-align: center;">
+                        <b>3. Reporte</b><br>Muestra tus avances
+                    </div>
+                </div>
+            </section>
+
+            <div class="glossary-small">
+                <div class="glossary-item">
+                    <b>NARRACIÓN:</b>
+                    <span>Relato de hechos reales o imaginarios que les suceden a unos personajes.</span>
+                </div>
+                <div class="glossary-item">
+                    <b>PROTAGONISTA:</b>
+                    <span>Es el personaje más importante de la historia, el que vive la mayor aventura.</span>
+                </div>
             </div>
         </main>
+        <div class="page-footer">Página 1</div>
     </div>
-
 </body>
 </html>
